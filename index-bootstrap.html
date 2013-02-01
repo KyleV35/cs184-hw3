@@ -5,32 +5,61 @@
     <meta charset="utf-8"/>
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
     <link type="text/css" rel="stylesheet" href="css/bootstrap-responsive.css"/>
+    <link type="text/css" rel="stylesheet" href="css/base.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
 </body>
     <header>
         <nav>
-            <a href="#">Fake URL</a>
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <a class="brand" href="#">HW3</a>
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toogle" data-toggle="dropdown" href="#"><i class="icon-home"></i>Home<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="index-bootstrap.html">Bootstrap</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">No Bootstrap</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Other</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <hgroup>
+        <div class="hero-unit">
             <h1>This is Kyle's Style Guide Page</h1>
-            <h2>Learn here and never go without style again</h2>
-        </hgroup>
+            <p>Learn here and never go without style again</p>
+        </div>
     </header>
     <section>
-        <p>This is the body of the style guide!</p>
-        <ol>
-            <li>This is the most important rule of all!</li>
-            <li>This one is also pretty important!</li>
-            <li>This one... not so much</li>
-        </ol>
-        </li>
-        <article>
-            <p>I once wrote this article many eons ago...</p>
-        </article>
+        <div class="row-fluid">
+            <div class="span3 offset1">
+                <h2>Cool List Area!</h2>
+                <p>This is the body of the style guide!</p>
+                <ol>
+                    <li>This is the most important rule of all!</li>
+                    <li>This one is also pretty important!</li>
+                    <li>This one... not so much</li>
+                </ol>
+                </li>
+            </div>
+            <div class="span5 offset1">
+                <h2>Awesome Article!</h2>
+                <article>
+                    <p>I once wrote this article many eons ago...</p>
+                </article>
+            </div>
+        </div>
     </section>
-    <footer>
+    <footer class="footer">
         <p>This is the footer</p>
     </footer>
 </body>
